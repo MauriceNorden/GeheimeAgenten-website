@@ -1,0 +1,109 @@
+body,
+html {
+    margin: auto;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("background.jpeg");
+    height: 100%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.overlay-div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+.wrapper-div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.wrapper-div h1,
+h2 {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.wrapper-div button {
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 0px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#player {
+    display: none;
+
+}
+
+.player-div {
+    width: calc(100% - 40px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 20px 20px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.pp-btn {
+    background: none;
+    color: white;
+    border: 0px solid white;
+    cursor: pointer;
+    float: left;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+
+}
+
+#vol-control {
+    -webkit-appearance: none;
+    width: calc(100% - 110px);
+    height: 5px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    float: left;
+    margin-top: 24px;
+}
+
+
+#vol-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: black;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+
+
+#pause-ico {
+    display: none;
+}

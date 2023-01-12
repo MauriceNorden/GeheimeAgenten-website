@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma de Geheime Agenten</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="overlay-div"></div>
+    <div class="wrapper-div">
+   
+        <img src="logo.png" alt="logo" class="logo">
+            <h1>Welkom bij</h1>
+           
+     
+        <h2>Firma de geheime agenten
+        </h2>
+        <button href="tel:+31645104000">Direct bellen met de studio</button>
+        <h3>06 45104000</h3>
+    
+    </div>
+        <div class="player-div">
+            <button class="pp-btn" onclick="togglePlay()"><i class="fas fa-pause" id="pause-ico"></i><i
+                    class="fas fa-play" id="play-ico"></i></button>
+                    <button class="pp-btn" ><i class="fas fa-volume-up"></i></button>
+            <input id="vol-control" value="100" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)"
+                onchange="SetVolume(this.value)"/>
+
+      
+
+
+
+            <audio controls id="player">
+                <source src="https://radio.mndevs.host/radio/8010/radio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+   
+</body>
+
+</html>
+
+
+
+
+
+
+<script src="script.js"></script>
